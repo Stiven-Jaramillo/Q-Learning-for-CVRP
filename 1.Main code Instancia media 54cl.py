@@ -16,7 +16,7 @@ from matplotlib import pyplot as plt
 
 """ Matrices """
 # Archivo Excel con los nodos de la instancia en distancias euclidianas en la hoja "r" y demandas en la hoja "d"
-file = "8. Código definitivo\\Instancia media (54 clientes)\\2.Matrices_instancia_media_54cl.xlsx"
+file = "2.Matrices_instancia_media_54cl.xlsx"
 r = pd.read_excel(file, sheet_name="r", header=None).values.astype(int)
 q = np.zeros(r.shape, dtype=int)
 demanda = pd.read_excel(file, sheet_name="d", header=None).values.astype(int)
